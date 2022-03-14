@@ -2,11 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Ticket;
+use App\Models\Comment;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class TicketSeeder extends Seeder
+class CommentSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,6 +15,6 @@ class TicketSeeder extends Seeder
      */
     public function run()
     {
-        Ticket::factory(10)->create();
+        Comment::factory(10)->create();
     }
 }

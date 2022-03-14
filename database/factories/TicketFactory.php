@@ -17,7 +17,8 @@ class TicketFactory extends Factory
     public function definition()
     {
         return [
-            //
+            "title" => $this->faker->sentence(),
+            "priority"=>$this->faker->numberBetween(0, 5),
         ];
     }
 }
